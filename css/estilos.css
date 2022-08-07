@@ -31,7 +31,7 @@ footer{
 }
 
 header{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.808);
     border-bottom: solid 2px blue;  
     
 }
@@ -46,8 +46,20 @@ nav {
 }
 
 
+.div-der{
+    background-image: url(../images/Bracco_214.jpg);
+    background-size: cover;
+    height: 100%;  
+}
 
 
+.compra{
+    height: 50vh;
+}
+
+.color{
+    color: #0001ff;
+}
 nav img{
     margin-right: 8%;
 }
@@ -318,6 +330,13 @@ form{
 
 }
 
+.div-foto-nos{
+    background-image: url(../images/Captura.PNG);
+    background-size: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .nosotros{
     display: flex;
     flex-direction: row;
@@ -397,6 +416,8 @@ form{
 /* VISTA TABLET*/
 
 @media screen and (min-width: 600px ) and (max-width: 1024px) {
+   
+    
     nav{
         display: flex;
         flex-direction: column;

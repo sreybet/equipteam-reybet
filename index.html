@@ -14,8 +14,9 @@
 
 </head>
 <body>
-    <header class="navegación">  
-            <nav>
+    <header class="navegación sticky-xl-top sticky-sm-top sticky-md-top"> 
+        <div>
+            <nav >
                 <img src="./images/equip_team-1.png" alt="Logo equiptem" width="8%" height="8%">
                 <a class="box"  href="#">Inicio</a>
                 <a class="box" href="./pages/productos.html">Productos</a>
@@ -23,21 +24,48 @@
                 <a class="box" href="./pages/comprar.html">Comprar</a>
                 <a class="box" href="./pages/contacto.html">Contacto</a>
             </nav>
+        </div> 
     </header>
     <main>
         <section>
-            <div class="banner">
-                <img src="./images/banner_equipteam.jpg" alt="Banner equipteam" height="100%" width="100%">
+            <div class="mb-5">
+                    <div class="carousel slide " id="carouselExampleControls" data-bs-ride="carousel">
+                         <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/Bracco_011 (1).jpg" alt="Banner equipteam" height="100%" width="100%" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                     <img src="./images/Bracco_197.jpg" alt="Banner equipteam" height="100%" width="100%" class="d-block w-100">
+                                </div>
+                                    <div class="carousel-item">
+                                    <img src="./images/Bracco_228.jpg" alt="Banner equipteam" height="100%" width="100%" class="d-block w-100">
+                                    </div>
+                            </div>
+                            
+                
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                            </button>
+                    </div> 
+                        
             </div>
+
+            
+
             <div>
-                <h1>EQUIPTEAM - Venta de equipamiento BRACCO</h1>
+                <h1 class="fw-bold">EQUIPTEAM - Venta de equipamiento BRACCO</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, fugiat. Officiis sequi laboriosam aspernatur, architecto harum inventore vitae officia id earum nesciunt maiores quas autem sed iure, consectetur incidunt esse? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem harum excepturi ea quae est quas minima esse fugit distinctio? Perspiciatis voluptas beatae, accusantium voluptate natus enim a asperiores porro tempora! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ab, veritatis dignissimos numquam, recusandae a mollitia ipsum tempora, illo vitae harum eveniet. Sint sed enim optio quaerat ducimus tempora ut. 
-            </p>
-        </div>
+                </p>
+            </div>
         </section>
         
         <section>
-            <h2 class="productos">Nuestros productos</h2> 
+            <h2 class="productos fw-bold">Nuestros productos</h2> 
             <div class="productos__div">
                 <div class="prodcutos__div_img">
                     <img  src="./images/tapa-rigida-bracco-venta-online.jpg" alt="tapa rigida bracco" width="100%" height="100%">
@@ -61,8 +89,8 @@
         </section>
     
     </main>
-    <footer>
-        <h2 class="redes">
+    <footer class="float-end">
+        <h2 class="redes fw-bold">
             Nuestras redes sociales
         </h2>
         <div class="redes__div">

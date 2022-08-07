@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Comprar</title>
 </head>
 <body>
-    <header class="navegación">
+    <header class="navegación sticky-xl-top sticky-sm-top sticky-md-top">
         <nav>
             <img src="../images/equip_team-1.png" alt="Logo equiptem" width="8%" height="8%">
             <a class="box"  href="../index.html">Inicio</a>
@@ -25,6 +25,25 @@
     </header>
     
     <main>
+        <section class="container-fluid section mt-2 mb-2 compra mt-5 pt-5"> 
+            
+            <div class="container-fluid h-100 d-flex ">
+
+                <div class="div-der w-50 border border-light rounded-start"> 
+                </div>
+                <div class="div-izq w-50 bg-white color p-4 border border-light rounded-end">
+                     <h2 class="mt-2 mb-5 text-center fw-bold">Proceso de compra</h2>
+                     <p class="mb-5 color"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vero, accusantium cupiditate tempore deleniti quia quae placeat id inventore dicta sint omnis pariatur quas deserunt! Fuga sed corporis natus delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi magni temporibus.  </p>
+                     
+                </div>
+    
+            </div>
+        </section>
+        
+
+
+<!-- section hecha antes de bootstrap
+
         <section class="comprar">
             <img class="comprar__foto" src="../images/banner_equipteam.jpg" alt="Camioneta con accesorio de equipteam" width="100%" height="100%">
             <div class="comprar__proceso">
@@ -32,10 +51,12 @@
                 <p class="comprar__proceso__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> quam aspernatur id cupiditate dignissimos eum illum natus reprehenderit mollitia facere voluptate et dolor vitae eos sit, consequatur iure veniam. <br>Eaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Eaque?Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
         </section>
+
+-->
     </main>
 
-    <footer>
-        <h2 class="redes">
+    <footer class="float-end">
+        <h2 class="redes fw-bold">
             Nuestras redes sociales
         </h2>
         <div class="redes__div">
@@ -54,6 +75,6 @@
 
         </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
 </body>
 </html>
