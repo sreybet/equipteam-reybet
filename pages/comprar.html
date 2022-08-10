@@ -13,34 +13,37 @@
     <title>Comprar</title>
 </head>
 <body>
-    <header class="navegación sticky-xl-top sticky-sm-top sticky-md-top">
-        <nav>
-            <img src="../images/equip_team-1.png" alt="Logo equiptem" width="8%" height="8%">
-            <a class="box"  href="../index.html">Inicio</a>
-            <a class="box" href="./productos.html">Productos</a>
-            <a class="box" href="./nosotros.html">Nosotros</a>
-            <a class="box" href="#">Comprar</a>
-            <a class="box" href="./contacto.html">Contacto</a>
+    <header class="sticky-top ">
+        <nav class="navbar navbar-expand-xl  navbar-dark color ">
+            <div class="container-fluid">
+              <a class="navbar-brand " href="#"><img src="../images/equip_team-1.png" alt="Logo equiptem" width="120px" height="60px"></a>
+              <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse  " id="navbarNavAltMarkup">
+                <div class=" navbar-nav mx-5 px-5">
+                  <a class=" navegacion__link nav-link active mx-5" aria-current="page" href="../index.html">Inicio</a>
+                  <a class="navegacion__link nav-link active mx-5 " href="../pages/productos.html">Productos</a>
+                  <a class="navegacion__link nav-link active mx-5" href="../pages/nosotros.html">Nosotros</a>
+                  <a class="navegacion__link nav-link active mx-5" href="#">Comprar</a>
+                  <a class="navegacion__link nav-link active mx-5 " href="../pages/contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
         </nav>
     </header>
-    
     <main>
-        <section class="container-fluid section mt-2 mb-2 compra mt-5 pt-5"> 
-            
+        <section class="container-fluid section mt-2 mb-2 compra mt-5 pt-5">   
             <div class="container-fluid h-100 d-flex ">
-
-                <div class="div-der w-50 border border-light rounded-start"> 
+                <div class="div-der w-50 h-100 border border-light rounded-start"> 
                 </div>
-                <div class="div-izq w-50 bg-white color p-4 border border-light rounded-end">
-                     <h2 class="mt-2 mb-5 text-center fw-bold">Proceso de compra</h2>
-                     <p class="mb-5 color"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vero, accusantium cupiditate tempore deleniti quia quae placeat id inventore dicta sint omnis pariatur quas deserunt! Fuga sed corporis natus delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi magni temporibus.  </p>
-                     
+                <div class="div-izq w-50 bg-white p-4 border border-light rounded-end">
+                     <h2 class="mt-2 mb-5 text-center fw-bold colorLetra">Proceso de compra</h2>
+                     <p class="mb-5 colorLetra "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vero, accusantium cupiditate tempore deleniti quia quae placeat id inventore dicta sint omnis pariatur quas deserunt! Fuga sed corporis natus delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eligendi magni temporibus.  </p>     
                 </div>
-    
             </div>
         </section>
         
-
 
 <!-- section hecha antes de bootstrap
 
@@ -54,7 +57,6 @@
 
 -->
     </main>
-
     <footer class="float-end">
         <h2 class="redes fw-bold">
             Nuestras redes sociales
