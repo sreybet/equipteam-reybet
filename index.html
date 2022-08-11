@@ -11,51 +11,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 </head>
 <body>
 
     <header class="sticky-top ">
-            <nav class="navbar navbar-expand-xl navbar-dark color d-flex justify-content-center ">
-                <div class="container-fluid">
-                  <a class="navbar-brand " href="#"><img src="./images/equip_team-1.png" alt="Logo equiptem" width="120px" height="60px"></a>
-                  <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-xl  navbar-dark color ">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="#"><img src="./images/equip_team-1.png" alt="Logo equiptem" width="120px" height="60px"></a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse  " id="navbarNavAltMarkup">
+                </button>
+                <div class="collapse navbar-collapse  " id="navbarNavAltMarkup">
                     <div class=" navbar-nav mx-5">
-                      <a class=" navegacion__link nav-link active mx-5" aria-current="page" href="#">Inicio</a>
-                      <a class="navegacion__link nav-link active mx-5 " href="./pages/productos.html">Productos</a>
-                      <a class="navegacion__link nav-link active mx-5" href="./pages/nosotros.html">Nosotros</a>
-                      <a class="navegacion__link nav-link active mx-5" href="./pages/comprar.html">Comprar</a>
-                      <a class="navegacion__link nav-link active mx-5 " href="./pages/contacto.html">Contacto</a>
+                        <a class=" nav-link active mx-5" aria-current="page" href="#">Inicio</a>
+                        <a class=" nav-link active mx-5 " href="./pages/productos.html">Productos</a>
+                        <a class=" nav-link active mx-5" href="./pages/nosotros.html">Nosotros</a>
+                        <a class=" nav-link active mx-5" href="./pages/comprar.html">Comprar</a>
+                        <a class="nav-link active mx-5 " href="./pages/contacto.html">Contacto</a>
                     </div>
-                  </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
     </header>
-
-    <!-- HEADER SIN BOOTSTRAP
-    <header class="navegación sticky-xl-top sticky-sm-top sticky-md-top"> 
-        <div>
-            <nav >
-                <img src="./images/equip_team-1.png" alt="Logo equiptem" width="8%" height="8%">
-                <a class="navegacion__link"  href="#">Inicio</a>
-                <a class="navegacion__link" href="./pages/productos.html">Productos</a>
-                <a class="navegacion__link" href="./pages/nosotros.html">Nosotros</a>
-                <a class="navegacion__link" href="./pages/comprar.html">Comprar</a>
-                <a class="navegacion__link" href="./pages/contacto.html">Contacto</a>
-            </nav>
-        </div> 
-    </header>
-    -->
-
     <main>
         <section>
             <div class="mb-5">
                 <div class="carousel slide " id="carouselExampleControls" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                         <div class="carousel-item active">
+                        <div class="carousel-item active">
                             <img src="./images/Bracco_011 (1).jpg" alt="Fabrica logo bracco" height="100%" width="100%" class="d-block w-100">
                         </div>
                         <div class="carousel-item">
@@ -76,35 +63,34 @@
                 </div>             
             </div>
             <div>
-                <h1 class="fw-bold">EQUIPTEAM - Venta de equipamiento BRACCO</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, fugiat. Officiis sequi laboriosam aspernatur, architecto harum inventore vitae officia id earum nesciunt maiores quas autem sed iure, consectetur incidunt esse? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem harum excepturi ea quae est quas minima esse fugit distinctio? Perspiciatis voluptas beatae, accusantium voluptate natus enim a asperiores porro tempora! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ab, veritatis dignissimos numquam, recusandae a mollitia ipsum tempora, illo vitae harum eveniet. Sint sed enim optio quaerat ducimus tempora ut. 
+                <h1 class="fw-bold ">EQUIPTEAM - Venta de equipamiento BRACCO</h1>
+                <p class="fs-sm-4 fs-md-3 fs-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, fugiat. Officiis sequi laboriosam aspernatur, architecto harum inventore vitae officia id earum nesciunt maiores quas autem sed iure, consectetur incidunt esse? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem harum excepturi ea quae est quas minima esse fugit distinctio? Perspiciatis voluptas beatae, accusantium voluptate natus enim a asperiores porro tempora! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ab, veritatis dignissimos numquam, recusandae a mollitia ipsum tempora, illo vitae harum eveniet. Sint sed enim optio quaerat ducimus tempora ut. 
                 </p>
             </div>
         </section>
         <section class="producto" >
             <h2 class="productos__h2 fw-bold">Nuestros productos</h2> 
             <div class="productos__div">
-                <div class="productos__div__img">
+                <div class="productos__div__img animate__animated animate__bounceIn">
                     <img  src="./images/tapa-rigida-bracco-venta-online.jpg" alt="tapa rigida bracco" width="100%" height="100%">
                 </div>
-                <div class="productos__div__img" >
+                <div class="productos__div__img animate__animated animate__bounceIn" >
                     <img  src="./images/venta-de-defensas-bracco-3.jpg" alt="defensas bracco" width="100%" height="100%">
                 </div>
-                <div class="productos__div__img">
+                <div class="productos__div__img animate__animated animate__bounceIn">
                     <img   src="./images/venta-de-enganches-bracco.jpg" alt="enganches bracco" width="100%" height="100%">
                 </div>
-                <div class="productos__div__img">
+                <div class="productos__div__img animate__animated animate__bounceIn">
                     <img  src="./images/venta-de-estribos-bracco-3.jpg" alt="estribos bracco" width="100%" height="100%">
                 </div>
-                <div class="productos__div__img">
+                <div class="productos__div__img animate__animated animate__bounceIn">
                     <img  src="./images/venta-de-jaulas-bracco-4.jpg" alt="jaulas bracco" width="100%" height="100%">
                 </div>
-                <div class="productos__div__img">
+                <div class="productos__div__img animate__animated animate__bounceIn">
                     <img  src="./images/venta-decobertores-bracco.jpg" alt="cobertores bracco" width="100%" height="100%">
                 </div>
             </div>  
-        </section>
-    
+        </section> 
     </main>
     <footer class="float-end">
         <h2 class="redes fw-bold">
@@ -123,7 +109,6 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
             </svg>
-
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
