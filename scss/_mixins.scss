@@ -1,0 +1,10 @@
+@mixin grid-rows3 {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+}
+
+@mixin relative-center {
+    position: relative;
+    text-align: center;
+}

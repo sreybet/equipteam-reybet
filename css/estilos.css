@@ -240,20 +240,17 @@ form {
   margin-bottom: 1%; }
 
 /* PAGINA PRODUCTOS */
-.productosJaula {
+.productosJaula, .contenedorJaula {
   display: flex;
   margin: 2%; }
 
-.productosJaula img {
+.productosJaula img, .contenedorJaula img {
   border: 2px solid white;
   border-radius: 15px; }
 
 .contenedorJaula {
-  display: flex;
   justify-content: space-around;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 2%; }
+  margin-top: 0%; }
 
 .contenedorJaula img {
   display: inline-block;

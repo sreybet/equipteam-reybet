@@ -1,6 +1,12 @@
-$color-fondo-principal: radial-gradient(circle, #0001ff, #0043ff, #0062ff, #007bff, #0091ff);
-$color-blanco: white;
-$color-principal: blue;
+
 $fuente-h2: 3rem;
 $fuente-h2-tablet: 2rem;
 $fuente-titulos-mobile: 1.25rem;
+
+
+$colores: (
+    fondo-principal : radial-gradient(circle, #0001ff, #0043ff, #0062ff, #007bff, #0091ff),
+    blanco: white,
+    principal: blue,
+)
+

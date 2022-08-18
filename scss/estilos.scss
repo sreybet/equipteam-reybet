@@ -1,4 +1,6 @@
 @import "variables.scss";
+@import "mixins.scss";
+
 
 *{
     margin: 0;
@@ -14,21 +16,20 @@ html{
 body{
     height: 100vh;
     overflow-x: hidden;
-    display: grid;
-    grid-template-rows: auto 1fr auto
+    @include grid-rows3;
 
 }
 
 
 .colorLetra{
-    color: $color-principal;
+    color: map-get($colores , principal ) ;
     font-size: 2.5rem;
     
  }
 
  p{
     font-size: 2.5rem;
-    color: $color-blanco;
+    color: map-get($colores , blanco );
     padding-top: 1%;
     padding-left: 5%;
     padding-right: 5%;
@@ -39,18 +40,17 @@ body{
 
 h1{
     font-size: 2rem;
-    color: $color-blanco;
-    position: relative;
-    text-align: center;
+    color: map-get($colores , blanco );
+    @include relative-center;
     margin-top: 1%;
     
 }
 header{
-    border-bottom: solid 2px $color-principal;
+    border-bottom: solid 2px map-get($colores , principal );
     nav {
         font-size: $fuente-h2; 
         text-transform: uppercase;
-        background-image: $color-fondo-principal;
+        background-image: map-get($colores , fondo-principal );
         
     }  
     
@@ -58,16 +58,15 @@ header{
 
 main{
     
-    background-color: $color-blanco;
-    border: solid 1px $color-blanco;
+    background-color: map-get($colores , blanco );
+    border: solid 1px map-get($colores , blanco );
     border-radius: 10px;
-    background-image: $color-fondo-principal;
+    background-image: map-get($colores , fondo-principal );
     .productos{
         .productos__h2{
             font-size: $fuente-h2;
-            color: $color-blanco;
-            position: relative;
-            text-align: center;
+            color: map-get($colores , blanco );
+            @include relative-center;
             margin-bottom: 1%;
         
         }
@@ -88,7 +87,7 @@ main{
                 height: 90%;
                 margin-top: 3%;
                 margin-bottom: 3%;
-                border: solid 5px $color-blanco;
+                border: solid 5px map-get($colores , blanco );
                 border-radius: 10px;
                 filter: opacity(100%);
                 transition: filter;
@@ -102,11 +101,11 @@ main{
 }
 
 footer{  
-        background-color: $color-blanco;
+        background-color: map-get($colores , blanco );
         padding: 1%;
         .redes{
             font-size: 1.75rem;
-            color: $color-principal;
+            color: map-get($colores , principal );
             position: relative;
             text-align: center;
             margin-top: 1%;
@@ -115,7 +114,7 @@ footer{
         .redes__div{
             text-align: center;
             .redes__div__iconos{
-                color: $color-principal;
+                color: map-get($colores , principal );
                 width: 2%;
                 height: 2%;
                 display: inline;
@@ -127,7 +126,7 @@ footer{
                 animation-duration: 2s;
                 animation-iteration-count: infinite;
                 @keyframes redes__div__iconos {
-                    0% {  color: $color-principal;}
+                    0% {  color: map-get($colores , principal )}
                     50%{  color:#0062ff}
                     100%{  color: #0091ff;}
                     
@@ -329,11 +328,9 @@ form{
 }
 
 .contenedorJaula{
-    display: flex;
+    @extend .productosJaula;
     justify-content: space-around;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
+    margin-top: 0%;
     
 }
     
