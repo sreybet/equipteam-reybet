@@ -1,0 +1,116 @@
+/* PAGINA COMPRAR */
+
+.div-der{
+    background-image: url(../images/Bracco_039.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: map-get($colores , blanco );
+}
+.compra{
+    height: 70vh;
+}
+
+
+.texto__compra{
+    color: map-get($colores , principal ) ;
+    width: 50vw;
+    .texto__compra__h2{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .texto__compra__p{ 
+        font-size: 2.25rem;
+        text-align: justify;
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 1%
+    }
+    .texto__compra__h3{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 1%
+    }
+    .texto__compra__lista{
+        font-size: 2rem;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 1%;
+        li{
+            padding: 1%;
+        }
+    }
+ }
+/* MOBILE MAS CHIQUITO */
+@media screen and (max-width: 400px){
+    .div-der{
+        display: none;
+    }
+    .texto__compra{
+        width: 100%;
+        .texto__compra__h2{
+            padding-top: 10%;
+            font-size: $fuente-titulos-mobile;
+        }
+        .texto__compra__p{ 
+            font-size: $fuente-titulos-mobile;
+            
+        }
+        .texto__compra__h3{
+            font-size: $fuente-titulos-mobile;
+            padding-bottom: 3%;
+        }
+        .texto__compra__lista{
+            font-size: $fuente-titulos-mobile;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 1%;
+            li{
+                padding: 3%;
+            }
+        }}
+}
+
+/* MOBILE */
+@media screen and (min-width: 401px) and (max-width: 599px) {
+    .texto__compra{
+        .texto__compra__h2{
+            font-size: 1.5rem;
+        }
+        .texto__compra__p{ 
+            font-size: $fuente-titulos-mobile;   
+        }
+        .texto__compra__h3{
+            font-size: $fuente-titulos-mobile;
+        }
+        .texto__compra__lista{
+            font-size: $fuente-titulos-mobile;
+            margin-top: 0%;
+            li{
+                padding: 2%;
+            }
+        }}
+    
+}
+/* TABLET */
+@media screen and (min-width: 600px ) and (max-width: 900px){
+    .texto__compra{
+        .texto__compra__h2{
+            font-size: 1.75rem;
+        }
+        .texto__compra__p{ 
+            font-size: 1.5rem;   
+        }
+        .texto__compra__h3{
+            font-size: 1.5rem;
+        }
+        .texto__compra__lista{
+            font-size: 1.5rem;
+            margin-top: 0%;
+            li{
+                padding: 2%;
+            }
+        }}
+}
+
+

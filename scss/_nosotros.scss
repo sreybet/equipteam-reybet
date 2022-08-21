@@ -1,0 +1,79 @@
+/* PAGINA NOSOTROS */
+.nosotrosTitulo{
+    text-align: center;
+    font-size: $fuente-h2;
+    color: map-get($colores , blanco );
+    padding-top: 25px;
+}
+
+.nosotros{
+    height: 50vh;
+    .parrafoNosotros{
+        color: map-get($colores , principal ) ;
+        font-size: 2rem;
+        text-align: justify;
+    }
+    .div-foto-nos{
+        background-image: url(../images/Captura.PNG);
+        background-size: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+    }
+
+.sectionVideo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .videoContenedor{
+        width: 60vw;
+        height: 40vh;
+        border:2px solid map-get($colores , blanco );
+        border-radius: 4px;
+        margin-top: 1%;
+        margin-bottom: 1%;  
+    }
+}
+
+
+
+
+/* VISTA TABLET*/
+
+@media screen and (min-width: 600px ) and (max-width: 1024px) {
+    .nosotrosTitulo{
+        font-size: 2.5rem;
+    }
+    .nosotros{
+        .parrafoNosotros{
+            font-size: 1.5rem;
+        }
+    }
+    
+}
+
+/* MOBILE */
+@media screen and (max-width: 599px) {
+
+    .nosotrosTitulo{
+        font-size: 2rem;
+    }
+    .nosotros{
+        .parrafoNosotros{
+            font-size: 1.25rem;
+        }
+    }
+    
+    
+    .sectionVideo{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        .videoContenedor{
+            width: 95vw;
+            height: 30vh;
+              
+        }
+    }
+    
+    }

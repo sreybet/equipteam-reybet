@@ -1,0 +1,167 @@
+/* PAGINA DE CONTACTO */
+
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    border-radius: 5px;
+    background-color: map-get($colores , blanco );
+    padding: 10px;
+    .datos__foto{
+        height: 200px;
+        width: 100%;
+        border: none;
+        border-radius: 4px;
+    }
+    fieldset{
+        width: 100%;
+        border: none;
+        .contacto{
+            .contacto__titulo{
+                margin-top: 20px;
+                text-align: center;
+                padding: 10px;
+                font-size: 2.25rem;
+                color: map-get($colores , principal );
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                .contacto__datos{
+                    input[type=submit] {
+                        font-size: 15px;
+                        background-color: #054dac;
+                        color: map-get($colores , blanco );
+                        padding: 12px 20px;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        margin-top: 16px;
+                        &:hover {
+                            background-color: #45a049;
+                          }
+                      }
+                    .contacto__datos__caja{
+                        margin-top: 16px;
+                        input[type=text],  textarea {
+                            font-size: 15px;
+                            padding: 15px;
+                            border: 1px solid rgb(136, 133, 133);
+                            border-radius: 4px;
+                            width: 45vw;
+                            resize: vertical;     
+                          }
+                    }
+                }
+            }
+        }
+      }
+}
+
+.tituloContacto{ 
+    color: map-get($colores , blanco );
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+.mapa{
+    margin-top: 25px;
+    height: 350px;
+    width: 100%;
+}
+
+@media screen and (min-width: 600px ) and (max-width: 1024px){
+    /* TABLET*/
+    
+    .datos{
+        .datos__foto{
+            height: 50%;
+            width: 100%;
+            
+        }
+        fieldset{
+            .contacto{
+                .contacto__titulo{   
+                    font-size: 1.75rem;
+                }
+                form{
+                    .contacto__datos{
+                        .contacto__datos__caja{
+                            input[type=text],  textarea {
+                                
+                                width: 55vw;
+                            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .mapa{
+        height: 25%;
+        width: 100%;
+    }
+      
+    .tituloContacto{
+        
+        font-size: 1.75rem;
+        
+    }
+}
+
+@media screen and (max-width: 599px) {
+    /* MOBILE */
+    
+    .datos{
+        flex-direction: column;
+        .datos__foto{
+            height: 50%;
+            width: 100%;
+            
+        }
+        fieldset{
+            .contacto{
+                .contacto__titulo{   
+                    font-size: 1.55rem;
+                }
+                form{
+                    .contacto__datos{
+                        input[type=sumbit] {
+                            font-size: 12px;
+                            padding: 8px 16px;
+                        }
+                        .contacto__datos__caja{
+                            input[type=text],  textarea {
+                                font-size: 12px;
+                                width: 55vw;
+                                padding: 5px;
+                        
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .mapa{
+ 
+        height: 250px;
+        width: 100%;
+    }
+      
+    .tituloContacto{
+        
+        font-size: 1.55rem;
+        
+    }
+}
