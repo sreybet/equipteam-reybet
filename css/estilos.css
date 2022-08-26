@@ -240,7 +240,7 @@ footer {
 
 /* PAGINA COMPRAR */
 .div-der {
-  background-image: url(../images/Bracco_039.jpg);
+  background-image: url(../images/bracco_039.jpg);
   background-size: cover;
   background-position: center;
   background-color: white; }
@@ -337,7 +337,7 @@ footer {
     font-size: 2rem;
     text-align: justify; }
   .nosotros .div-foto-nos {
-    background-image: url(../images/Captura.PNG);
+    background-image: url(../images/captura.PNG);
     background-size: 100%;
     height: 100%;
     background-repeat: no-repeat;
