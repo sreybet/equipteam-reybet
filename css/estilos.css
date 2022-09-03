@@ -9,14 +9,14 @@ header {
   font-size: 2.5rem;
   color: white;
   padding-top: 1%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-bottom: 1%;
   text-align: justify;
   font-weight: 300; }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
   position: relative;
   text-align: center;
@@ -34,7 +34,7 @@ main {
     color: white;
     position: relative;
     text-align: center;
-    margin-bottom: 1%; }
+    margin-bottom: 2%; }
   main .productos .productos__div {
     width: 100%;
     margin-left: auto;
@@ -69,25 +69,26 @@ footer {
   footer .redes__div {
     text-align: center; }
     footer .redes__div .redes__div__iconos {
-      color: blue;
       width: 2%;
       height: 2%;
       display: inline;
       margin-left: 3%;
       margin-right: 3%;
       margin-top: 2%;
-      margin-bottom: 1%;
-      animation-name: redes__div__iconos;
-      animation-duration: 2s;
-      animation-iteration-count: infinite; }
+      margin-bottom: 1%; }
+      footer .redes__div .redes__div__iconos .redes__div__iconos__link {
+        fill: blue;
+        animation-name: redes__div__iconos;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; }
 
 @keyframes redes__div__iconos {
   0% {
-    color: blue; }
+    fill: blue; }
   50% {
-    color: #0062ff; }
+    fill: #0062ff; }
   100% {
-    color: #0091ff; } }
+    fill: #0091ff; } }
 
 /* VISTA MOBILE*/
 @media screen and (max-width: 599px) {
@@ -145,13 +146,14 @@ footer {
 .datos {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 1%;
   border-radius: 5px;
   background-color: white;
   padding: 10px; }
   .datos .datos__foto {
     height: 200px;
-    width: 100%;
+    width: 95%;
     border: none;
     border-radius: 4px; }
   .datos fieldset {
@@ -199,7 +201,12 @@ footer {
 .mapa {
   margin-top: 25px;
   height: 350px;
-  width: 100%; }
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  border: 2px solid white;
+  border-radius: 4px; }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   /* TABLET*/
@@ -246,7 +253,7 @@ footer {
   background-color: white; }
 
 .compra {
-  height: 70vh; }
+  height: 80%; }
 
 .texto__compra {
   color: blue;
@@ -331,7 +338,8 @@ footer {
   padding-top: 25px; }
 
 .nosotros {
-  height: 50vh; }
+  height: 50vh;
+  width: 90vw; }
   .nosotros .parrafoNosotros {
     color: blue;
     font-size: 2rem;
@@ -345,8 +353,14 @@ footer {
 
 .sectionVideo {
   display: flex;
-  flex-direction: row;
-  justify-content: center; }
+  flex-direction: column;
+  align-items: center; }
+  .sectionVideo .tituloVideo {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 1%; }
   .sectionVideo .videoContenedor {
     width: 60vw;
     height: 40vh;
@@ -360,7 +374,9 @@ footer {
   .nosotrosTitulo {
     font-size: 2.5rem; }
   .nosotros .parrafoNosotros {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .sectionVideo .tituloVideo {
+    font-size: 2rem; } }
 
 /* MOBILE */
 @media screen and (max-width: 599px) {
@@ -371,8 +387,10 @@ footer {
   .sectionVideo {
     margin-top: 5%;
     margin-bottom: 5%; }
+    .sectionVideo .tituloVideo {
+      font-size: 1.5rem; }
     .sectionVideo .videoContenedor {
-      width: 95vw;
+      width: 90vw;
       height: 30vh; } }
 
 /* PAGINA PRODUCTOS */
@@ -380,42 +398,72 @@ footer {
   text-align: center;
   font-size: 3rem;
   color: white;
-  padding-top: 25px; }
+  padding-top: 25px;
+  padding-bottom: 25px; }
 
-.productosJaula, .contenedorJaula {
+.productosJaula, .contenedorJaula, .contenedorTapa, .productosTapa {
   display: flex;
   margin: 2%; }
-  .productosJaula img, .contenedorJaula img {
+  .productosJaula img, .contenedorJaula img, .contenedorTapa img, .productosTapa img {
     border: 2px solid white;
     border-radius: 15px; }
 
-.contenedorJaula {
+.separador {
+  text-align: center;
+  color: white; }
+  .separador h3 {
+    font-size: 2.5rem; }
+
+.contenedorJaula, .contenedorTapa {
   justify-content: space-around;
   margin-top: 0%; }
-  .contenedorJaula img {
+  .contenedorJaula img, .contenedorTapa img {
     display: inline-block;
     height: 30vh;
-    width: 30vw;
+    width: 25vw;
     border: 2px solid white;
     border-radius: 8px; }
 
+.productosTapa img {
+  border: 2px solid white;
+  border-radius: 15px;
+  height: 70vh; }
+
 /* MOBILE */
 @media screen and (max-width: 599px) {
-  .productosJaula, .contenedorJaula {
+  .productosJaula, .contenedorJaula, .contenedorTapa, .productosTapa {
     width: 100%;
     flex-direction: column;
     align-items: center;
     padding-top: 2%; }
-    .productosJaula img, .contenedorJaula img {
+    .productosJaula img, .contenedorJaula img, .contenedorTapa img, .productosTapa img {
       width: 80%; }
-  .contenedorJaula {
+  .contenedorJaula, .contenedorTapa {
     flex-direction: column;
     width: 100%;
     align-items: center; }
-    .contenedorJaula img {
+    .contenedorJaula img, .contenedorTapa img {
       width: 60%;
       height: 30vh;
-      margin-bottom: 2%; } }
+      margin-bottom: 2%; }
+  .productosTapa {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%; }
+    .productosTapa img {
+      width: 80%;
+      height: 20vh; } }
+
+/* TABLET*/
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .productosTapa {
+    display: flex;
+    margin: 2%; }
+    .productosTapa img {
+      border: 2px solid white;
+      border-radius: 15px;
+      height: 35vh; } }
 
 * {
   margin: 0;

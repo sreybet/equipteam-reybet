@@ -13,8 +13,8 @@ header{
     font-size: 2.5rem;
     color: map-get($colores , blanco );
     padding-top: 1%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 1%;
     text-align: justify;
     font-weight: 300;
@@ -22,10 +22,11 @@ header{
 
 
 h1{
-    font-size: 2rem;
+    font-size: 3rem;
     color: map-get($colores , blanco );
     @include relative-center;
     margin-top: 1%;
+    
     
 }
 
@@ -45,8 +46,7 @@ main{
             font-size: $fuente-h2;
             color: map-get($colores , blanco );
             @include relative-center;
-            margin-bottom: 1%;
-        
+            margin-bottom: 2%;
         }
     }
     .productos{
@@ -91,8 +91,7 @@ footer{
     }
     .redes__div{
         text-align: center;
-        .redes__div__iconos{
-            color: map-get($colores , principal );
+            .redes__div__iconos{
             width: 2%;
             height: 2%;
             display: inline;
@@ -100,19 +99,22 @@ footer{
             margin-right: 3% ;
             margin-top: 2% ;
             margin-bottom: 1% ;
-            animation-name: redes__div__iconos;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-            @keyframes redes__div__iconos {
-                0% {  color: map-get($colores , principal )}
-                50%{  color:#0062ff}
-                100%{  color: #0091ff;}
-                
+            .redes__div__iconos__link{
+                fill: map-get($colores , principal );
+                animation-name: redes__div__iconos;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                @keyframes redes__div__iconos {
+                    0% {  fill: map-get($colores , principal )}
+                     50%{  fill:#0062ff}
+                    100%{  fill: #0091ff;}       
+                }
             }
-            
-        }
-    }
+                
+        }}
+        
 }
+
 /* VISTA MOBILE*/
 
 @media screen and (max-width: 599px) {

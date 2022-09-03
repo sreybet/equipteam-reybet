@@ -8,6 +8,7 @@
 
 .nosotros{
     height: 50vh;
+    width: 90vw;
     .parrafoNosotros{
         color: map-get($colores , principal ) ;
         font-size: 2rem;
@@ -24,8 +25,15 @@
 
 .sectionVideo{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .tituloVideo{
+        text-align: center;
+        font-size: 2.5rem;
+        color: map-get($colores , blanco ) ;
+        padding-top: 2%;
+        padding-bottom: 1%;
+    }
     .videoContenedor{
         width: 60vw;
         height: 40vh;
@@ -50,7 +58,11 @@
             font-size: 1.5rem;
         }
     }
-    
+    .sectionVideo{
+        .tituloVideo{
+            font-size: 2rem;
+        }
+    }
 }
 
 /* MOBILE */
@@ -69,8 +81,11 @@
     .sectionVideo{
         margin-top: 5%;
         margin-bottom: 5%;
+        .tituloVideo{
+            font-size: 1.5rem;
+        }
         .videoContenedor{
-            width: 95vw;
+            width: 90vw;
             height: 30vh;
               
         }
