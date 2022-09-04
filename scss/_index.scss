@@ -12,10 +12,10 @@ header{
  .pIndex{
     font-size: 2.5rem;
     color: map-get($colores , blanco );
-    padding-top: 1%;
+    padding-top: map-get($espaciado, uno );
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 1%;
+    padding-bottom: map-get($espaciado, uno );
     text-align: justify;
     font-weight: 300;
 }
@@ -25,7 +25,7 @@ h1{
     font-size: 3rem;
     color: map-get($colores , blanco );
     @include relative-center;
-    margin-top: 1%;
+    margin-top: map-get($espaciado, uno );
     
     
 }
@@ -46,7 +46,7 @@ main{
             font-size: $fuente-h2;
             color: map-get($colores , blanco );
             @include relative-center;
-            margin-bottom: 2%;
+            margin-bottom: map-get($espaciado, dos );
         }
     }
     .productos{
@@ -59,12 +59,12 @@ main{
             grid-template-rows: repeat(2,1fr);
             align-items: center;
             justify-items: center;
-            margin-bottom: 2%;
+            margin-bottom: map-get($espaciado, dos );
             .productos__div__img{
                 width: 75%;
                 height: 90%;
-                margin-top: 3%;
-                margin-bottom: 3%;
+                margin-top: map-get($espaciado, tres );
+                margin-bottom: map-get($espaciado, tres );
                 border: solid 5px map-get($colores , blanco );
                 border-radius: 10px;
                 filter: opacity(100%);
@@ -80,25 +80,24 @@ main{
 
 footer{  
     background-color: map-get($colores , blanco );
-    padding: 1%;
+    padding: map-get($espaciado, uno );
     .redes{
         font-size: 1.75rem;
         color: map-get($colores , principal );
-        position: relative;
-        text-align: center;
-        margin-top: 1%;
+        @include relative-center;
+        margin-top: map-get($espaciado, uno );
     
     }
     .redes__div{
         text-align: center;
             .redes__div__iconos{
-            width: 2%;
-            height: 2%;
+            width: map-get($espaciado, dos );
+            height: map-get($espaciado, dos );
             display: inline;
-            margin-left: 3%  ;
-            margin-right: 3% ;
-            margin-top: 2% ;
-            margin-bottom: 1% ;
+            margin-left: map-get($espaciado, tres );
+            margin-right: map-get($espaciado, tres );
+            margin-top: map-get($espaciado, dos );
+            margin-bottom: map-get($espaciado, uno );
             .redes__div__iconos__link{
                 fill: map-get($colores , principal );
                 animation-name: redes__div__iconos;
@@ -139,11 +138,8 @@ footer{
                 font-size: $fuente-titulos-mobile;
             }
             .productos__div{
-                display: grid;
                 grid-template-columns: repeat(1,1fr);
                 grid-template-rows: repeat(6,1fr);
-                align-items: center;
-                justify-items: center;
                 }
         }
         
@@ -156,8 +152,8 @@ footer{
         }
         .redes__div{
             .redes__div__iconos{
-                width: 4%;
-                height: 4%;
+                width: map-get($espaciado, cuatro );
+                height: map-get($espaciado, cuatro );
             }
         }
     }
@@ -197,11 +193,8 @@ footer{
         }
         .productos{
             .productos__div{
-                display: grid;
                 grid-template-columns: repeat(2,1fr);
                 grid-template-rows: repeat(3,1fr);
-                align-items: center;
-                justify-items: center;
                 }
         }
         }
@@ -212,8 +205,8 @@ footer{
         }
         .redes__div{
             .redes__div__iconos{
-                width: 3%;
-                height: 3%;
+                width: map-get($espaciado, tres );
+                height: map-get($espaciado, tres );
                 }
         }
     }

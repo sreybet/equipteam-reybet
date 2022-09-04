@@ -3,10 +3,19 @@ $fuente-h2: 3rem;
 $fuente-h2-tablet: 2rem;
 $fuente-titulos-mobile: 1.25rem;
 
+$radio: 4px;
+$espaciado:(
+    uno: 1%,
+    dos: 2%,
+    tres: 3%,
+    cuatro: 4%,
+    cinco: 5%,
+) ;
 
 $colores: (
     fondo-principal : radial-gradient(circle, #0001ff, #0043ff, #0062ff, #007bff, #0091ff),
     blanco: white,
     principal: blue,
 )
+
 

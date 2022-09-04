@@ -2,13 +2,14 @@
 
 
 .datos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1%;
+   @include flex-column-center;
+    margin-top: map-get($espaciado, uno );
     border-radius: 5px;
     background-color: map-get($colores , blanco );
     padding: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
    
     .datos__foto{
         height: 200px;
@@ -28,10 +29,8 @@
                 color: map-get($colores , principal );
             }
             form{
-                display: flex;
-                flex-direction: column;
+                @include flex-column-center;
                 justify-content: space-evenly;
-                align-items: center;
                 .contacto__datos{
                     input[type=submit] {
                         font-size: 15px;
@@ -39,7 +38,7 @@
                         color: map-get($colores , blanco );
                         padding: 12px 20px;
                         border: none;
-                        border-radius: 4px;
+                        border-radius: $radio;
                         cursor: pointer;
                         margin-top: 16px;
                         &:hover {
@@ -52,7 +51,7 @@
                             font-size: 15px;
                             padding: 15px;
                             border: 1px solid rgb(136, 133, 133);
-                            border-radius: 4px;
+                            border-radius: $radio;
                             width: 45vw;
                             resize: vertical;     
                           }
@@ -79,7 +78,7 @@
     margin-right: auto;
     margin-bottom: 25px;
     border: 2px solid map-get($colores , blanco ) ;
-    border-radius: 4px;
+    border-radius: $radio;
 }
 
 @media screen and (min-width: 600px ) and (max-width: 1024px){
@@ -114,7 +113,6 @@
 
     .mapa{
         height: 25%;
-        width: 100%;
     }
       
     .tituloContacto{
@@ -163,7 +161,6 @@
     .mapa{
  
         height: 250px;
-        width: 100%;
     }
       
     .tituloContacto{

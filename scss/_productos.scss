@@ -9,7 +9,7 @@
 }
 .productosJaula{
     display: flex;
-    margin: 2%; 
+    margin: map-get($espaciado, dos );
     img{
         border:2px solid map-get($colores , blanco );
         border-radius: 15px;
@@ -63,17 +63,15 @@
     
     .productosJaula{
         width: 100%;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 2%;
+        @include column-center;
+        padding-top: map-get($espaciado, dos );
         img{
             width: 80%;
         }
     }
     .contenedorJaula{
-        flex-direction: column;
+        @include column-center;
         width: 100%;
-        align-items: center; 
         img{
             width: 60%;
             height: 30vh;
@@ -85,9 +83,8 @@
     }
     .productosTapa{
         width: 100%;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 2%;
+        @include column-center;
+        padding-top: map-get($espaciado, dos );
         img{
             width: 80%;
             height: 20vh;
@@ -103,7 +100,7 @@
     
     .productosTapa{
         display: flex;
-        margin: 2%; 
+        margin: map-get($espaciado, dos );
         img{
             border:2px solid map-get($colores , blanco );
             border-radius: 15px;
